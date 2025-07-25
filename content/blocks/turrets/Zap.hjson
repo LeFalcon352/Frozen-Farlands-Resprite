@@ -1,0 +1,79 @@
+name: Zap
+"type": ItemTurret,
+"size": 1,
+"health": 400,
+range: 250,
+rotateSpeed: 5,
+reload: 100
+burstSpacing: 1
+shots: 1
+xRand: 1
+consumes: {
+  power: 6
+}
+"ammoPerShot": 2,
+recoilAmount: 3
+shootSound: ZapSound
+    "ammoTypes": {
+        "arcanite": {
+      type: lightningBulletType,
+      "lightningLength": 20,
+      "lightningLengthRand": 12,
+      damage: 80,
+      rangeChange: -96
+      status: electrified
+      statusDuration: 60
+      hitEffect: none
+      buildingDamageMultiplier: 0.1
+      "lightColor": "ffce8c",
+      lightningColor: ffea00
+        lightningType: {
+      type: lightningBulletType,
+      "lightningLength": 3,
+      "lightningLengthRand": 4,
+      damage: 20,
+      hitEffect: none
+      splashDamageRadius: 10
+      "lightColor": "ffce8c",
+      lightningColor: ffea00
+      status: electrified
+      statusDuration: 60
+        }
+}
+        "arcanthium": {
+      type: lightningBulletType,
+      "lightningLength": 30,
+      "lightningLengthRand": 20,
+      damage: 300,
+            status: paralyzed
+      statusDuration: 180
+      hitEffect: none
+      buildingDamageMultiplier: 0.1
+      "lightColor": "ffce8c",
+      lightningColor: ff8000
+        lightningType: {
+      type: lightningBulletType,
+      "lightningLength": 4,
+      "lightningLengthRand": 5,
+      damage: 15,
+      hitEffect: none
+      splashDamageRadius: 15
+      "lightColor": "ffce8c",
+      lightningColor: ff8000
+      status: paralyzed
+      statusDuration: 180
+        }
+}
+    }
+category: turret
+requirements: [
+    yttrium/80
+    arcanite/50
+    arcanthium/30
+]
+research: Alectro
+researchCost: [
+    yttrium/800
+    arcanite/500
+    arcanthium/300
+  ]

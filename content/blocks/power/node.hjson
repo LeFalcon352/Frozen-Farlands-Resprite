@@ -1,0 +1,14 @@
+type: PowerNode
+size: 1
+maxNodes: 10
+laserRange: 10
+laserColor1: a1fffc
+laserColor2: 00fff7
+category: power
+requirements: [
+  arcanite/4
+]
+research: ATG
+researchCost: [
+    arcanite/30
+    ]

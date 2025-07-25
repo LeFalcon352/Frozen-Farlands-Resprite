@@ -1,0 +1,68 @@
+  "type": "GenericCrafter",
+  "description": "Ionizes xenon particles with arcalith fluid energy",
+  "health": 650,
+  "size": 3,
+	"drawer": {
+	"type": "DrawMulti",
+        "drawers": [
+        {
+        "type": "DrawRegion"
+        suffix: -bottom
+        }
+        {
+        "type": "DrawLiquidRegion"
+        suffix: -liquid1
+        drawLiquid: xenon
+        }
+        {
+        "type": "DrawLiquidRegion"
+        suffix: -liquid2
+        drawLiquid: ionized-xenon
+        }
+        {
+        "type": "DrawLiquidRegion"
+        suffix: -liquid3
+        drawLiquid: arcalith
+        }
+        {
+        "type": "DrawDefault"
+        }
+        ]
+        }
+  "hasItems": true,
+  "craftTime": 30,
+  "craftEffect": "none",
+  "hasPower": true,
+  "hasLiquids": true,
+    liquidCapacity: 50
+  "updateEffect": "none",
+  "consumes": {
+  "power": 2,
+    "liquids": [
+      "xenon/0.5",
+      "arcalith/0.6"
+    ],
+  },
+  "requirements": [
+    yttrium/120
+    aluminium/100
+    aerogel/80
+    diamond/30
+  ],
+  "category": "crafting",
+  "outputLiquid": "ionized-xenon/0.3"
+research: {
+    parent: "xenon-synthezator",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Crash-landing"
+        }
+    ]
+}
+researchCost: [
+    yttrium/1000
+    aluminium/800
+    aerogel/800
+    diamond/500
+  ]

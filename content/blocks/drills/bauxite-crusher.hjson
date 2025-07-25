@@ -1,0 +1,30 @@
+
+  "type": "WallCrafter",
+  "description": "Stronger wall crusher capable of mining bauxites",
+  "size": 2,
+  "category": "production",
+ requirements: [
+    yttrium/12
+    arcanite/4
+  ]
+  "drillTime": 240,
+  "output": "bauxite",
+  "fogRadius": 2,
+  "consumes": {
+    "power": 0.3,
+  },
+  "ambientSound": "drill",
+  "ambientSoundVolume": 0.06
+research: {
+    parent: "ice-crusher",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Transit-cavern"
+        }
+    ]
+},
+researchCost: [
+    yttrium/160
+    arcanite/80
+  ]

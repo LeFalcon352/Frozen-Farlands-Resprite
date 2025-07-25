@@ -1,0 +1,74 @@
+    "type": "ItemTurret",
+    "size": 2,
+    "health": 540,
+    "reload": 70,
+    "range": 110,
+    "maxAmmo": 12,
+    "inaccuracy": 3,
+    "shots": 2,
+    "targetAir": true,
+    "targetGround": true,
+    "shootCone": 8,
+    "spread": 1,
+    "recoilAmount": 3,
+    "restitution": 0.5,
+    "rotateSpeed": 5,
+    "shootSound": "RhinoSound",
+    "ammoPerShot": 2,
+    "ammoTypes": {
+        "yttrium": {
+            "type": "shrapnelBulletType",
+            "lifetime": 19,
+            "damage": 28,
+            serrations: 4
+            serrationSpacing: 16
+            serrationLenScl: 20
+            serrationWidth: 5
+            hitLarge: true
+            "fromColor": "abb3b3",
+            "toColor": "e8eded",
+            "length": 100,
+            "width": 8,
+            "hitEffect": "blastExplosion",
+            "shootEffect": "blastExplosion",
+            "pierce": true,
+            "smokeEffect": "hitBulletBig"
+        }
+        "cryogenium": {
+            "type": "shrapnelBulletType",
+            "lifetime": 25,
+            "damage": 40,
+            status: freezing
+            statusDuration: 30
+            serrations: 6
+            serrationSpacing: 16
+            serrationLenScl: 15
+            serrationWidth: 5
+            "fromColor": "6feeff",
+            "toColor": "25aef4",
+            "length": 100,
+            "width": 9,
+            "hitEffect": "blastExplosion",
+            "shootEffect": "blastExplosion",
+            "pierce": true,
+            "smokeEffect": "hitBulletBig"
+        }
+    },
+category: turret
+requirements: [
+  yttrium/30
+  arcanite/10
+  ]
+research: {
+    parent: "pin",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Lonely-lake"
+        }
+    ]
+},
+  researchCost: [
+    yttrium/150
+    arcanite/50
+  ]

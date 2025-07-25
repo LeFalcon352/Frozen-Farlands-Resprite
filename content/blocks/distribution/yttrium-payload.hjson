@@ -1,0 +1,23 @@
+type: PayloadConveyor
+size: 3
+moveTime: 80
+moveForce: 300
+payloadLimit: 3
+category: units
+requirements: [
+  yttrium/10
+  aluminium/5
+]
+research: {
+    parent: "Constructor-1",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Crash-landing"
+        }
+    ]
+},
+researchCost: [
+    yttrium/200
+    aluminium/150
+  ]

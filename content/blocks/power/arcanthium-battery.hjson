@@ -1,0 +1,40 @@
+type: battery
+size: 3
+	"hasPower": true,
+	"outputsPower": true,
+	"consumesPower": true,
+	"hasItems": false,
+canOverdrive: false
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
+consumes: {
+    powerBuffered: 10000
+}
+category: power
+requirements: [
+  arcanite/40
+  arcanthium/15
+]
+research: {
+    parent: "arcanite-battery",
+    objectives: [
+        {
+            type: "SectorComplete",
+            preset: "Solar-peaks"
+        }
+    ]
+},
+researchCost: [
+    arcanite/1200
+    arcanthium/300
+    ]

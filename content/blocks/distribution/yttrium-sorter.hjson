@@ -1,0 +1,10 @@
+type: Sorter
+health: 80
+requirements: [
+  yttrium/5
+] 
+category: distribution
+research: yttrium-bridge
+researchCost: [
+    yttrium/100
+  ]

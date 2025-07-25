@@ -1,0 +1,23 @@
+type: Conveyor
+hasShadow: true
+health: 80
+speed: 0.05
+displayedSpeed: 7
+junctionReplacement: yttrium-junction
+bridgeReplacement: yttrium-bridge
+requirements: [
+  yttrium/1
+]
+category: distribution
+research: {
+    parent: "core-2",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Frosty-prelude"
+        }
+    ]
+}
+researchCost: [
+    yttrium/10
+  ]

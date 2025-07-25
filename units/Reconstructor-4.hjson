@@ -1,0 +1,41 @@
+type: Reconstructor
+size: 3
+health: 1200
+constructTime: 1200
+liquidCapacity: 60
+consumes: {
+  power: 3
+    items: {
+      items: [
+        aluminium/40
+        aerogel/30
+      ]
+    }
+  liquid: {
+    liquid: arcalith
+    amount: 0.6
+  }
+}
+upgrades: [
+  [axoflare, axoflare2]
+]
+requirements: [
+  yttrium/120
+  aluminium/70
+  aerogel/50
+]
+category: units
+research: {
+    parent: "Constructor-4",
+    objectives: [
+        {
+            type: "SectorComplete",
+            preset: "Cold-seaside"
+        }
+    ]
+},
+researchCost: [
+    yttrium/700
+    aluminium/350
+    aerogel/300
+  ]

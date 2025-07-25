@@ -1,0 +1,11 @@
+    "type": "Wall",
+    "health": 1800,
+    "size": 2,
+    category: defense
+requirements: [
+  cryogenium/24
+]
+research: cryogenium-wall
+researchCost: [
+    cryogenium/400
+  ]

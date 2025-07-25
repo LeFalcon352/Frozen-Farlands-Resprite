@@ -1,0 +1,11 @@
+    "type": "Wall",
+    "health": 650,
+    "size": 1,
+    category: defense
+requirements: [
+  diamond/6
+]
+research: cryogenium-wall
+researchCost: [
+    diamond/100
+  ]

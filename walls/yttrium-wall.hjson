@@ -1,0 +1,19 @@
+    "type": "Wall",
+    "health": 300,
+    "size": 1,
+    category: defense
+requirements: [
+  yttrium/6
+]
+research: {
+    parent: "core-2",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Frosty-prelude"
+        }
+    ]
+}
+researchCost: [
+    yttrium/50
+  ]

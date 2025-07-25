@@ -1,0 +1,34 @@
+type: UnitFactory
+health: 800
+size: 3
+consumes: {
+  power: 1.2
+}
+plans: [
+  {
+    unit: cryoflare
+    time: 1000
+    requirements: [
+      yttrium/15
+      aerogel/10
+    ]
+  }
+]
+requirements: [
+  yttrium/50
+  aerogel/30
+]
+category: units
+research: {
+    parent: "Constructor-2",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Cold-seaside"
+        }
+    ]
+},
+researchCost: [
+    yttrium/250
+    aerogel/150
+  ]

@@ -1,0 +1,85 @@
+type: ConsumeGenerator
+size: 3
+hasLiquids: true
+liquidCapacity: 60
+canOverdrive: false
+itemDuration: 180
+baseExplosiveness: 0
+  "drawer": {
+  "type": "DrawMulti",
+        "drawers": [
+        {
+       "type": "DrawRegion",
+       "suffix": "-bottom"
+	   },
+        {
+        "type": "DrawLiquidTile",
+        "drawLiquid": "arcalith",
+        "suffix": "-liquid"
+        },
+        {	
+        "type": "DrawPistons"
+        suffix: -piston1
+        sinMag: 5
+        sinScl: 10
+        sides: 4
+	      }
+        {	
+        "type": "DrawDefault"
+	       }
+    ]
+    },
+consumes: {
+    "items": [
+    cryogenium/1
+    ]
+    liquids: [
+      arcalith/0.2
+    ]
+}
+generateEffectRange: 1
+effectChance: 0.025
+generateEffect: {
+    type: RadialEffect
+    layer: 118
+    rotationSpacing: 60
+    amount: 6
+    lengthOffset: 6
+    effect: {
+      particles: 1
+      length: 90
+      lifetime: 400
+      cone: 20
+      baseRotation: 32
+      useRotation: false 
+      sizeFrom: 0
+      sizeTo: 12
+      colorFrom: e0e0e066
+      colorTo: e0e0e000
+      sizeInterp: pow2Out
+      interp: pow2Out
+      layer: 111
+    }
+  }
+outputLiquid: water/0.5
+powerProduction: 10
+category: power
+requirements: [
+  yttrium/200
+  arcanite/150
+  aluminium/100
+]
+research: {
+    parent: "ATG",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Transit-cavern"
+        }
+    ]
+},
+researchCost: [
+  yttrium/600
+  arcanite/350
+  aluminium/200
+    ]

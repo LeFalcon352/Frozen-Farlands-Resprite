@@ -1,0 +1,63 @@
+  "type": "GenericCrafter",
+  "health": 250,
+  "size": 2,
+  "hasItems": true,
+  "craftTime": 60,
+  "craftEffect": "none",
+  "drawer": {
+  "type": "DrawMulti",
+        "drawers": [
+        {
+       "type": "DrawRegion",
+       "suffix": "-bottom"
+	   },
+        {
+        "type": "DrawLiquidTile",
+        "drawLiquid": "arcalith",
+        "suffix": "-liquid"
+        },
+        {	
+        "type": "DrawPistons"
+        suffix: -piston1
+        sinMag: 9
+        sinScl: 8
+        angleOffset: 45
+        sides: 4
+	      }
+        {	
+        "type": "DrawDefault"
+	       }
+    ]
+    },
+  "hasPower": true,
+  "hasLiquids": true,
+  "updateEffect": "none",
+  liquidCapacity: 70
+  "consumes": {
+  "power": 0.80,
+    "items": [
+      "arcanite/1"
+    ],
+        "liquids": [
+      "water/0.25"
+    ],
+  },
+  "requirements": [
+    yttrium/30
+    arcanite/30
+  ],
+  "category": "crafting",
+  "outputLiquid": "arcalith/0.61"
+research: {
+    parent: heater
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Lonely-lake"
+        }
+    ]
+},
+researchCost: [
+    yttrium/200
+    arcanite/200
+  ]

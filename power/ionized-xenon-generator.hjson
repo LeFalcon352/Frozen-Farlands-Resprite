@@ -1,0 +1,64 @@
+type: ConsumeGenerator
+size: 4
+health: 1200
+hasLiquids: true
+canOverdrive: false
+liquidCapacity: 120
+itemDuration: 240
+baseExplosiveness: 0
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawPlasma
+      suffix: -plasma
+      plasmas: 2
+      plasma1: 96e7ff
+      plasma2: 4fa7ff
+    }
+    {
+      type: DrawDefault
+    }
+    {
+       "type": "DrawGlowRegion",
+       "suffix": "-glow", 
+       "glowScale": 10,
+       "color": "66B1FF"
+       "alpha": 1
+    }
+  ]
+}
+consumes: {
+    "liquids": [
+     ionized-xenon/0.3
+    ]
+}
+powerProduction: 60
+category: power
+requirements: [
+  moonstone/400
+  aluminium/250
+  cryogenium/250
+  diamond/100
+]
+research: {
+    parent: "cryogenic-generator",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Crash-landing"
+        }
+    ]
+},
+researchCost: [
+    moonstone/3000
+    aluminium/2500
+    cryogenium/2000
+    diamond/600
+    ]
+ambientSound: hum
+ambientSoundVolume: 1

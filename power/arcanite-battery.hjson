@@ -1,0 +1,38 @@
+type: battery
+size: 2
+	"hasPower": true,
+	"outputsPower": true,
+	"consumesPower": true,
+	"hasItems": false,
+canOverdrive: false
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
+consumes: {
+    powerBuffered: 1500
+}
+category: power
+requirements: [
+  arcanite/25
+]
+research: {
+    parent: "node",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Lonely-lake"
+        }
+    ]
+},
+researchCost: [
+    arcanite/150
+    ]

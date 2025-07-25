@@ -1,0 +1,26 @@
+type: Pump
+health: 265
+size: 2
+pumpAmount: 0.2
+squareSprite: false
+category: liquid
+hasPower: true
+consumes: {
+power: 0.30
+  }
+requirements: [
+  yttrium/40
+]
+research: {
+    parent: "core-2",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Lonely-lake"
+        }
+    ]
+},
+researchCost: [
+    yttrium/150
+    ice-shard/100
+  ]

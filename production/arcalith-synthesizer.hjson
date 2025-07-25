@@ -1,0 +1,67 @@
+  "type": "GenericCrafter",
+  "health": 450,
+  "size": 3,
+  "hasItems": true,
+  "craftTime": 60,
+  "craftEffect": "none",
+  "drawer": {
+  "type": "DrawMulti",
+        "drawers": [
+        {
+       "type": "DrawRegion",
+       "suffix": "-bottom"
+	   },
+        {
+        "type": "DrawLiquidTile",
+        "drawLiquid": "arcalith",
+        "suffix": "-liquid"
+        },
+        {	
+        "type": "DrawPistons"
+        suffix: -piston
+        sinMag: 12
+        sinScl: 14
+        angleOffset: 45
+        sides: 4
+	      }
+        {	
+        "type": "DrawDefault"
+	       }
+    ]
+    },
+  "hasPower": true,
+  "hasLiquids": true,
+  "updateEffect": "none",
+  liquidCapacity: 150
+  "consumes": {
+  "power": 5,
+    "items": [
+      "arcanite/2"
+    ],
+        "liquids": [
+      "water/0.9"
+    ],
+  },
+  "requirements": [
+    arcanite/160
+    aluminium/100
+    moonstone/80
+    arcanthium/60
+  ],
+  "category": "crafting",
+  "outputLiquid": "arcalith/1.85"
+research: {
+    parent: heater
+    objectives: [
+        {
+            type: "SectorComplete",
+            preset: "Solar-peaks"
+        }
+    ]
+},
+researchCost: [
+    arcanite/1600
+    aluminium/1200
+    moonstone/1000
+    arcanthium/400
+  ]

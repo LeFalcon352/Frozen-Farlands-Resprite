@@ -1,0 +1,13 @@
+type: OverflowGate
+health: 80
+invert: true
+requirements: [
+  yttrium/5
+] 
+category: distribution
+research: {
+    parent: yttrium-overflow
+}
+researchCost: [
+    yttrium/100
+  ]

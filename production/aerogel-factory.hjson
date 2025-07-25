@@ -1,0 +1,89 @@
+  "type": "GenericCrafter",
+  "health": 450,
+  "size": 3,
+  "hasItems": true,
+  "craftTime": 120,
+ craftEffect: {
+    "type": "MultiEffect",
+	"effects": [
+            {
+              type: ParticleEffect
+              particles: 10
+              lifetime: 150
+              length: 15
+              sizeFrom: 2
+              lightOpacity : 2
+              sizeTo: 4
+              colorFrom: e1e8e8dd
+              colorTo: c8cfcf00
+              strokeFrom: 0.5
+              strokeTo: 0
+              interp: pow3Out
+              spin: 5
+              sizeInterp: pow2In
+              region: moon-mod-steam
+            }
+	]
+  }
+	"drawer": {
+	"type": "DrawMulti",
+        "drawers": [
+                 {
+        "type": "DrawRegion"
+        suffix: -bottom
+        }
+                        {
+        "type": "DrawLiquidTile"
+        suffix: -liquid
+        drawLiquid: water
+        }
+                {
+              "type": "DrawRegion"
+        suffix: -rotator
+        rotateSpeed: 1
+        spinSprite: true
+  }
+          {
+      "type": "DrawDefault"
+        }
+                  {
+      "type": "DrawGlowRegion"
+        suffix: -glow
+        }
+        {
+              "type": "DrawRegion"
+        suffix: -top
+        }
+        ]
+        }
+  "hasPower": true,
+  "hasLiquids": true,
+  "updateEffect": "none",
+  "consumes": {
+  "power": 1.70,
+    "liquids": [
+      "water/0.5"
+      xenon/0.25
+    ],
+  },
+  "requirements": [
+    yttrium/30
+    aluminium/20
+    ice-shard/15
+  ],
+  "category": "crafting",
+  "outputItem": "aerogel/3"
+research: {
+    parent: aluminium-foundry
+    objectives: [
+        {
+            type: "OnSector"
+            preset: "Cold-seaside"
+        }
+    ]
+},
+researchCost: [
+    yttrium/400
+    aluminium/200
+    ice-shard/150
+  ]

@@ -1,0 +1,73 @@
+  "type": "GenericCrafter",
+  "description": "Creates liquid resonance with the use of water and resonance ore",
+  "health": 250,
+  "size": 3,
+  "hasItems": true,
+  "craftTime": 45,
+  "craftEffect": "none",
+  ignoreLiquidFullness: true
+  dumpExtraLiquid: true
+	"drawer": {
+	"type": "DrawMulti",
+        "drawers": [
+          {
+            type: DrawRegion
+          suffix: -bottom
+          }
+        {
+          type: DrawRegion
+          suffix: -rotator
+          rotateSpeed: 7
+        }
+        {
+        "type": "DrawDefault"
+        },
+      {
+       "type": "DrawGlowRegion",
+       "suffix": "-glow", 
+       "glowScale": 8,
+       "color": "66B1FF90"
+     }
+      {
+    "type": "DrawParticles",
+    "color": "66B1FFFF",
+    "alpha": 0.4,
+    "reverse": true,
+    "blending": "additive",
+    "particleSize": 2,
+    "particleRad": 8,
+    "particles": 16,
+    "fadeMargin": 1,
+    "rotateScl": 7,
+    "particleLife": 120
+     },
+    ]
+    },
+  "hasPower": true,
+  "hasLiquids": true,
+  "updateEffect": "none",
+  "consumes": {
+  "power": 1.20,
+    "liquids": [
+    "cryofluid/0.4"
+    ]
+  },
+  "requirements": [
+    yttrium/30
+    ice-shard/15
+  ],
+  "category": "crafting",
+  "outputItem": "cryogenium/1"
+research: {
+    parent: "core-2",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Lonely-lake"
+        }
+    ]
+},
+researchCost: [
+    yttrium/120
+    ice-shard/60
+  ]

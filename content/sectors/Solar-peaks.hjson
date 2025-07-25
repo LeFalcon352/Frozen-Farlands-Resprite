@@ -1,0 +1,20 @@
+
+    sector: 6,
+    planet: "Zilo",
+    research: {
+        parent: "Secret-passage",
+        objectives: [
+            Rereconstructor
+            {
+                type: "SectorComplete",
+                preset: "Cold-seaside"
+            }
+            {
+                type: "SectorComplete",
+                preset: "Secret-passage"
+            }
+        ]
+    },
+    difficulty: 6,
+    overrideLaunchDefaults: true
+    addStartingItems: true

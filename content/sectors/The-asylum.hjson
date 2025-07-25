@@ -1,0 +1,16 @@
+
+    sector: 0,
+    planet: "Gheţar",
+    research: {
+        parent: "Crash-landing",
+        objectives: [
+            {
+                type: "SectorComplete",
+                preset: "Crash-landing"
+            }
+        ]
+    },
+    difficulty: 9,
+    overrideLaunchDefaults: true
+    addStartingItems: true
+captureWave: 101

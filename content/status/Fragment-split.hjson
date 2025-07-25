@@ -1,0 +1,15 @@
+{
+        effect: {
+        type: ParticleEffect,
+        particles: 1,
+        region: "moon-mod-triangle",
+        lifetime: 14,
+        length: 1,
+        sizeFrom: 2,
+        sizeTo: 4,
+        colorFrom: "50bcfa",
+        colorTo: "c5e7fa"
+        spin: 5
+        },
+        damage: 0.5
+}

@@ -1,0 +1,15 @@
+
+    sector: 14,
+    planet: "Zilo",
+    research: {
+        parent: "Frontline",
+        objectives: [
+            {
+                type: "SectorComplete",
+                preset: "Frontline"
+            }
+        ]
+    },
+    difficulty: 10,
+    overrideLaunchDefaults: true
+    addStartingItems: true

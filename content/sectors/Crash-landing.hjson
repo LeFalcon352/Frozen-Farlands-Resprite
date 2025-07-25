@@ -1,0 +1,16 @@
+
+    sector: 27,
+    planet: "Zilo",
+    captureWave: 51
+    research: {
+        parent: "Cryo-river",
+        objectives: [
+            {
+                type: "SectorComplete",
+                preset: "Cryo-river"
+            }
+        ]
+    },
+    difficulty: 7,
+    overrideLaunchDefaults: true
+    addStartingItems: true

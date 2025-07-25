@@ -1,0 +1,15 @@
+    sector: 18,
+    planet: "Zilo",
+    captureWave: 21
+    research: {
+        parent: "Frosty-prelude",
+        objectives: [
+            {
+                type: "SectorComplete",
+                preset: "Frosty-prelude"
+            }
+        ]
+    },
+    difficulty: 1,
+    overrideLaunchDefaults: true
+    addStartingItems: true

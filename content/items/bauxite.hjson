@@ -1,0 +1,20 @@
+type: item
+name: Bauxite
+description: Ore that is rich in aluminium metal, can be smelted in aluminium foundry
+  "cost": 1,
+  "color": "b04900",
+  "flammability": 0.1,
+  "explosiveness": 0,
+  "radioactivity": 0,
+  "charge": 0,
+  hardness: 2
+research: {
+    parent: "yttrium",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Transit-cavern"
+        }
+    ]
+},
+    alwaysUnlocked: true

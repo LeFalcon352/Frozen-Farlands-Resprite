@@ -1,0 +1,14 @@
+planet: Zilo
+sector: 29
+    research: {
+        parent: "Lonely-lake",
+        objectives: [
+            {
+                type: "SectorComplete",
+                preset: "Lonely-lake"
+            }
+        ]
+    },
+difficulty: 4
+overrideLaunchDefaults: true
+addStartingItems: true

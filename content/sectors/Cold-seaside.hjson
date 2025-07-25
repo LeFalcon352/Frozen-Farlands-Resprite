@@ -1,0 +1,15 @@
+    sector: 17,
+    planet: "Zilo",
+    captureWave: 23
+    research: {
+        parent: "Transit-cavern",
+        objectives: [
+            {
+                type: "SectorComplete",
+                preset: "Transit-cavern"
+            }
+        ]
+    },
+    difficulty: 5,
+    overrideLaunchDefaults: true
+    addStartingItems: true

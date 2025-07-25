@@ -1,0 +1,16 @@
+
+    sector: 13,
+    planet: "Zilo",
+    research: {
+        parent: "Crash-landing",
+        objectives: [
+            {
+                type: "SectorComplete",
+                preset: "Crash-landing"
+            }
+        ]
+    }
+    difficulty: 10,
+    overrideLaunchDefaults: true
+    addStartingItems: true
+captureWave: 11

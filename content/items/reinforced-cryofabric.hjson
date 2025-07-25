@@ -1,0 +1,9 @@
+type: item
+name: ReinforcedCryoFabric
+  "cost": 5,
+  "color": "0558b0",
+  "flammability": -1,
+  "explosiveness":-1 ,
+  "radioactivity": 0.10,
+  hardness: 10
+research: cryogenium

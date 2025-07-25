@@ -1,0 +1,40 @@
+type: Reconstructor
+size: 3
+health: 1200
+constructTime: 1500
+liquidCapacity: 60
+consumes: {
+  power: 2
+    items: {
+      items: [
+        aluminium/60
+        cryogenium/40
+      ]
+    }
+  liquid: {
+    liquid: cryofluid
+    amount: 0.6
+  }
+}
+upgrades: [
+  [cryospider, cryospider2]
+]
+requirements: [
+  cryogenium/120
+  aluminium/60
+]
+category: units
+research: {
+    parent: "Constructor-2",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Transit-cavern"
+        }
+    ]
+},
+researchCost: [
+    yttrium/500
+    cryogenium/300
+    aluminium/150
+  ]

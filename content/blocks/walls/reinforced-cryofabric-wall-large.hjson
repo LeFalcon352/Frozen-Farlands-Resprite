@@ -1,0 +1,14 @@
+    "type": "Wall",
+    "health": 3600,
+    "size": 2,
+    absorbLasers: true
+    chanceDeflect: 50
+hasPower: false
+category: defense
+requirements: [
+  reinforced-cryofabric/24
+]
+research: reinforced-cryofabric-wall
+researchCost: [
+    reinforced-cryofabric/400
+  ]

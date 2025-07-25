@@ -1,0 +1,33 @@
+type: UnitCargoLoader
+size: 2
+health: 500
+itemCapacity: 50
+consumes: {
+  power: 2
+  liquid: xenon/0.5
+}
+buildTime: 180
+polySides: 2
+polyRotateSpeed: 3
+polyStroke: 3
+unitType: salmon
+category: distribution
+research: {
+    parent: "moonstone-conveyor",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Cryo-river"
+        }
+    ]
+},
+requirements: [
+  yttrium/100
+  cryogenium/60
+  moonstone/50
+]
+researchCost: [
+  yttrium/900
+  cryogenium/750
+  moonstone/600
+  ]

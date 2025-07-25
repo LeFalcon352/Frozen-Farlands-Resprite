@@ -1,9 +1,6 @@
 # Frozen-Farlands
 
-frozen farlands mod except almost all of its textures are different
-
-
-
+frozen farlands mod except almost all of its textures are different  
 
 frozen farlands discord server:
 <https://discord.gg/QymKeVDfmD>

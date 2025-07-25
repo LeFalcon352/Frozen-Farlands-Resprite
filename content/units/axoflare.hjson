@@ -1,0 +1,121 @@
+    "type": "flying",
+    "lowAltitude": true,
+    "speed": 1.6,
+    "accel": 0.05,
+    "drag": 0.04,
+    "flying": true,
+    "health": 120,
+    "hitSize": 7,
+    "armor": 0,
+    "itemCapacity": 15,
+  "outlineColor": "b2b8c2",
+    "engineOffset": 5,
+    "faceTarget": true,
+    mineTier: 2
+    mineSpeed: 1.5
+    mineRange: 40
+mineItems: [
+  yttrium
+  arcanite
+]
+	"weapons": [
+{
+name: axoflare-weapon
+x: 0
+y: 1
+mirror: false
+shoot: {
+type: ShootPattern
+shots: 1
+}
+top: false
+rotate: true
+reload: 60
+recoil: 2
+    shootSound: PikeSound
+    bullet: {
+      speed: 3
+      lifetime: 40
+      damage: 10
+    healAmount: 15
+    collidesTeam: true
+    collides: true
+      width: 8
+      height: 16
+        frontColor: 3ce82f
+        backColor: ffffff
+      despawnHit: true
+      despawnEffect: none
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 15
+          length: 15
+          lenFrom: 3
+          lenTo: 0
+          strokeFrom: 1
+          strokeTo: 0
+          colorFrom: 3ce82f
+          colorTo: ffffff
+        }
+        {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 10
+          lifetime: 10
+          strokeFrom: 2
+          strokeTo: 0
+          colorFrom: 3ce82f
+          colorTo: ffffff
+        }
+      ]
+    "shootEffect": {
+        "type": "MultiEffect",
+        "effects": [
+            {
+                "type": "WaveEffect",
+                "colorFrom": "3ce82f",
+                "colorTo": "3ce82f",
+                "sizeFrom": 1,
+                "sizeTo": 15,
+                strokeFrom: 2
+                strokeTo: 0
+                "lifetime": 10
+            }
+            {
+              type: ParticleEffect
+              particles: 3
+              lifetime: 30
+              length: 12
+              sizeFrom: 3
+              sizeTo: 0
+              colorFrom: 3ce82f
+              colorTo: 218e18
+              strokeFrom: 3
+              strokeTo: 1.5
+              interp: pow3Out
+              spin: 5
+              sizeInterp: pow2In
+              region: moon-mod-triangle
+            }
+        ]
+    }
+    trailChance: 0.35
+    trailLength: 4
+    trailWidth: 2
+    trailColor: 3ce82f
+    }
+}
+ ] 
+research: {
+    parent: "Constructor-4",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Lonely-lake"
+        }
+    ]
+}
+  researchCostMultiplier: 0

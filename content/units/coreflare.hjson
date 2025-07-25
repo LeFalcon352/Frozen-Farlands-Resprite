@@ -1,0 +1,111 @@
+    "type": "flying",
+    "lowAltitude": true,
+    "speed": 2.5,
+    "accel": 0.1,
+    "drag": 0.04,
+    "flying": true,
+    "health": 300,
+    "hitSize": 10,
+    "armor": 1,
+    "itemCapacity": 50,
+  "outlineColor": "36363c",
+    "engineOffset": 6,
+    "faceTarget": true,
+    controller: BuilderAI
+    mineTier: 2
+    mineSpeed: 5
+    buildSpeed: 1
+    buildBeamOffset: 5
+    isEnemy: false
+weapons: [
+{
+name: coreflare-gun
+x: 0
+y: 3
+mirror: false
+shoot: {
+type: ShootPattern
+shots: 1
+}
+top: false
+rotate: true
+reload: 45
+recoil: 3
+    shootSound: PikeSound
+    bullet: {
+      homingPower: 0.03
+      homingRange: 60
+      buildingDamageMultiplier: 0.03
+      speed: 4
+      lifetime: 40
+      damage: 13
+      pierce: true
+      pierceBuilding: true
+      pierceCap: 2
+      width: 9
+      height: 20
+        frontColor: 03f8fc
+        backColor: ffffff
+      despawnHit: true
+      despawnEffect: none
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 15
+          length: 15
+          lenFrom: 3
+          lenTo: 0
+          strokeFrom: 1
+          strokeTo: 0
+          colorFrom: 03f8fc
+          colorTo: ffffff
+        }
+        {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 10
+          lifetime: 15
+          strokeFrom: 3
+          strokeTo: 0
+          colorFrom: 03f8fc
+          colorTo: ffffff
+        }
+      ]
+    "shootEffect": {
+        "type": "MultiEffect",
+        "effects": [
+            {
+                "type": "WaveEffect",
+                "colorFrom": "11dcf2",
+                "colorTo": "11dcf2",
+                "sizeFrom": 1,
+                "sizeTo": 15,
+                "lifetime": 10
+            }
+            {
+              type: ParticleEffect
+              particles: 1
+              lifetime: 30
+              length: 12
+              sizeFrom: 3
+              sizeTo: 0
+              colorFrom: 03f8fc
+              colorTo: adfaff
+              strokeFrom: 3
+              strokeTo: 1.5
+              interp: pow3Out
+              spin: 5
+              sizeInterp: pow2In
+              region: moon-mod-triangle
+            }
+        ]
+    }
+    trailChance: 0.3
+    trailLength: 4
+    trailWidth: 2.5
+    trailColor: 03f8fc
+    }
+}
+ ] 

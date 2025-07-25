@@ -1,0 +1,507 @@
+    "type": "flying",
+    "lowAltitude": true,
+    "speed": 4,
+    "accel": 0.1,
+    "drag": 0.1,
+    "flying": true,
+    "health": 98754065273467256738443520835265439562304562039563709300,
+    "hitSize": 12,
+    "armor": 1000,
+    "itemCapacity": 10000,
+  "outlineColor": "36363c",
+    "engineOffset": 14,
+    "engineSize": 5,
+    "faceTarget": false,
+weapons: [
+      {
+    "name": "disk-launcher",
+    "top": false,
+    "shootY": 2,
+    "reload": 7,
+    shake: 12
+    speed: 3
+    "x": 10,
+    "y": -10,
+    "alternate": true,
+    "mirror": true,
+    rotate: true
+    "recoil": 2,
+    "shootSound": "bolt",
+    "bullet": { 
+    "type": "MissileBulletType",
+    "sprite": "moon-mod-excision-logo2",
+    "spin": 3
+    "collidesAir": true,
+    "collides": true,
+    "collidesTiles": true,
+    "height": 25,
+    "width": 25,
+    "frontColor": 4df4ff,
+    "backColor": 4df4ff,
+    "hitEffect": {
+    "type": "MultiEffect",
+	"effects": [
+	{
+	"type": "ParticleEffect",
+    "line": true,
+    "particles": 18,
+    "lifetime": 142,
+    "baseLength": 40,
+    "length": 70,
+    "lenFrom": 6,
+    "lenTo": 6,
+    "lightColor": "bdfbff",
+    "colorFrom": "bdfbff",
+    "colorTo": "1fcbff"
+	},
+	{
+	"type": "ParticleEffect",
+    "particles": 10,
+    "length": 50,
+    "lifetime": 80,
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "colorFrom": "33cfff",
+    "colorTo": "0282fa",
+    "sizeFrom": 8,
+    "sizeTo": 0
+	},
+	{
+    "type": "ParticleEffect",
+    "particles": 16,
+    "length": 90,
+    "lifetime": 100,
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "lightColor": "bdfbff",
+    "colorFrom": "bdfbff",
+    "colorTo": "1fcbff",
+    "sizeFrom": 9,
+    "sizeTo": 0
+	}
+              {
+                "type": "WaveEffect",
+                "colorFrom": "bdfbff",
+                "colorTo": "1fcbff",
+                "sizeFrom": 1,
+                "sizeTo": 280,
+                "lifetime": 40,
+                "strokeFrom": 35,
+                "strokeTo": 0
+            }
+	]
+  }
+    "lifetime" : 80,
+    "speed": 4,
+    "damage": 150,
+    "splashDamage": 150,
+    "splashDamageRadius": 70,
+    "collidesTeam": true,
+    "healPercent": 0.1,
+    "pierceCap": 4,
+    "buildingDamageMultiplier": 3,
+    "pierceBuilding": true,
+    "pierce": true,
+    "spin": 3
+    "trailChance": 0,
+    "trailEffect": {
+    "type": "ParticleEffect",
+    "particles": 1,
+    "length": 0,
+    "lifetime": 20,
+    "region": "moon-mod-excision-logo",
+    "lightColor": "4df4ff",
+    "colorFrom": "4df4ff",
+    "colorTo": "bdfbff00",
+    "sizeFrom": 7,
+    "sizeTo": 7
+    }
+    }
+    }
+          {
+    "name": "disk-launcher",
+    "top": false,
+    "shootY": 2,
+    "reload": 3,
+    shake: 4
+    "x": 14,
+    "y": -6,
+    "alternate": true,
+    "mirror": true,
+    rotate: true
+    "recoil": 2,
+    "shootSound": "bolt",
+    "bullet": { 
+    "type": "MissileBulletType",
+    "sprite": "moon-mod-excision-logo2",
+    "spin": 4
+    "collidesAir": true,
+    "collides": true,
+    "collidesTiles": true,
+    "height": 15,
+    "width": 15,
+    "frontColor": ffb0b0,
+    "backColor": ff7373,
+    "hitEffect": {
+    "type": "MultiEffect",
+	"effects": [
+	{
+	"type": "ParticleEffect",
+    "line": true,
+    "particles": 38,
+    "lifetime": 322,
+    "baseLength": 40,
+    "length": 70,
+    "lenFrom": 6,
+    "lenTo": 6,
+    "lightColor": "ff7a7a",
+    "colorFrom": "ff7a7a",
+    "colorTo": "ff0000"
+	},
+	{
+	"type": "ParticleEffect",
+    "particles": 10,
+    "length": 50,
+    "lifetime": 80,
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "colorFrom": "ff7a7a",
+    "colorTo": "ff0000",
+    "sizeFrom": 8,
+    "sizeTo": 0
+	},
+	{
+    "type": "ParticleEffect",
+    "particles": 16,
+    "length": 60,
+    "lifetime": 100,
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "lightColor": "ff7a7a",
+    "colorFrom": "ff7a7a",
+    "colorTo": "ff0000",
+    "sizeFrom": 9,
+    "sizeTo": 0
+	}
+                {
+                "type": "WaveEffect",
+                "colorFrom": "ff7a7a",
+                "colorTo": "ff0000",
+                "sizeFrom": 1,
+                "sizeTo": 180,
+                "lifetime": 20,
+                "strokeFrom": 15,
+                "strokeTo": 0
+            }
+	]
+  }
+    "lifetime" : 80,
+    "speed": 4,
+    "damage": 150,
+    "splashDamage": 150,
+    "splashDamageRadius": 70,
+    "collidesTeam": true,
+    "healPercent": 0.1,
+    "pierceCap": 4,
+    "buildingDamageMultiplier": 55563,
+    "pierceBuilding": true,
+    "pierce": true,
+    "spin": 3
+    "trailChance": 0,
+    "trailEffect": {
+    "type": "ParticleEffect",
+    "particles": 1,
+    "length": 0,
+    "lifetime": 20,
+    "region": "moon-mod-excision-logo",
+    "lightColor": "4df4ff",
+    "colorFrom": "ff0000",
+    "colorTo": "ff0000",
+    "sizeFrom": 7,
+    "sizeTo": 7
+    }
+    }
+    }
+{
+name: cryoflare2-gun
+mirror: true
+x: 2
+y: 4
+top: false
+rotate: true
+reload: 30
+recoil: 0
+shootSound: railgun
+ejectEffect: none
+    "bullet": { 
+    "colors":["dfff45", "e9ff7d", "FFFFFFF"],
+      "type": "LaserBulletType",
+      "length": 280,
+      "width": 30,
+      "damage": 20,
+      "recoil": 0,
+    "shootEffect": {
+        "type": "MultiEffect",
+        "effects": [
+            {
+                "type": "WaveEffect",
+                "colorFrom": "11dcf2",
+                "colorTo": "11dcf2",
+                "sizeFrom": 1,
+                "sizeTo": 20,
+                "lifetime": 10
+            }
+            {
+              type: ParticleEffect
+              particles: 5
+              lifetime: 30
+              length: 10
+              sizeFrom: 3
+              sizeTo: 0
+              colorFrom: ffffff
+              colorTo: dfff45
+              strokeFrom: 3
+              strokeTo: 1.5
+              interp: pow3Out
+              spin: 5
+              sizeInterp: pow2In
+              region: moon-mod-triangle
+            }
+        ]
+    }
+}
+},
+{
+name: cryoflare2-gun
+mirror: true
+x: 8
+y: 0
+top: false
+rotate: true
+reload: 40
+recoil: 0
+shootSound: railgun
+ejectEffect: none
+    "bullet": { 
+    "colors":["4f78ff", "8fa9ff", "FFFFFFF"],
+      "type": "LaserBulletType",
+      "length": 260,
+      "width": 15,
+      "damage": 20,
+      "recoil": 0,
+    "shootEffect": {
+        "type": "MultiEffect",
+        "effects": [
+            {
+                "type": "WaveEffect",
+                "colorFrom": "11dcf2",
+                "colorTo": "4f78ff",
+                "sizeFrom": 1,
+                "sizeTo": 20,
+                "lifetime": 10
+            }
+            {
+              type: ParticleEffect
+              particles: 5
+              lifetime: 30
+              length: 10
+              sizeFrom: 3
+              sizeTo: 0
+              colorFrom: ffffff
+              colorTo: 4f78ff
+              strokeFrom: 3
+              strokeTo: 1.5
+              interp: pow3Out
+              spin: 5
+              sizeInterp: pow2In
+              region: moon-mod-triangle
+            }
+        ]
+    }
+}
+},
+{
+name: cryoflare2-gun
+mirror: true
+x: 12
+y: -4
+top: false
+rotate: true
+reload: 20
+recoil: 0
+shootSound: railgun
+ejectEffect: none
+    "bullet": { 
+    "colors":["31ff26", "88ff82", "FFFFFFF"],
+      "type": "LaserBulletType",
+      "length": 240,
+      "width": 20,
+      "damage": 20,
+      "recoil": 0,
+    "shootEffect": {
+        "type": "MultiEffect",
+        "effects": [
+            {
+                "type": "WaveEffect",
+                "colorFrom": "11dcf2",
+                "colorTo": "31ff26",
+                "sizeFrom": 1,
+                "sizeTo": 20,
+                "lifetime": 10
+            }
+            {
+              type: ParticleEffect
+              particles: 5
+              lifetime: 30
+              length: 10
+              sizeFrom: 3
+              sizeTo: 0
+              colorFrom: ffffff
+              colorTo: 31ff26
+              strokeFrom: 3
+              strokeTo: 1.5
+              interp: pow3Out
+              spin: 5
+              sizeInterp: pow2In
+              region: moon-mod-triangle
+            }
+        ]
+    }
+}
+},
+{
+name: cryoflare2-gun
+mirror: true
+x: 15
+y: 8
+top: false
+rotate: true
+reload: 25
+recoil: 0
+shootSound: railgun
+ejectEffect: none
+    "bullet": { 
+    "colors":["ff2626", "ff6363", "FFFFFFF"],
+      "type": "LaserBulletType",
+      "length": 220,
+      "width": 30,
+      "damage": 20,
+      "recoil": 0,
+    "shootEffect": {
+        "type": "MultiEffect",
+        "effects": [
+            {
+                "type": "WaveEffect",
+                "colorFrom": "11dcf2",
+                "colorTo": "ff2626",
+                "sizeFrom": 1,
+                "sizeTo": 20,
+                "lifetime": 10
+            }
+            {
+              type: ParticleEffect
+              particles: 5
+              lifetime: 30
+              length: 10
+              sizeFrom: 3
+              sizeTo: 0
+              colorFrom: ffffff
+              colorTo: ff2626
+              strokeFrom: 3
+              strokeTo: 1.5
+              interp: pow3Out
+              spin: 5
+              sizeInterp: pow2In
+              region: moon-mod-triangle
+            }
+        ]
+    }
+}
+}
+{
+name: cryoflare33-launcher
+mirror: true
+alternate: true
+x: 10
+y: 6
+top: false
+rotate: true
+reload: 25
+recoil: 1
+layerOffset: -1
+shootSound: missileSmall
+ejectEffect: none
+    "bullet": { 
+      maxRange: 400
+    "colors":["00eeff", "00eeff", "FFFFFFF"],
+      "type": "LaserBulletType",
+        "spawnUnit": "moonstone-missile"
+    }
+}
+{
+name: cryoflare33-launcher
+mirror: true
+alternate: true
+x: 16
+y: 9
+top: false
+rotate: true
+reload: 20
+recoil: 1
+layerOffset: -1
+shootSound: missileSmall
+ejectEffect: none
+    "bullet": { 
+      maxRange: 400
+    "colors":["00eeff", "00eeff", "FFFFFFF"],
+      "type": "LaserBulletType",
+        "spawnUnit": "cryogenium-missile"
+    }
+}
+{
+name: cryoflare33-launcher
+mirror: true
+alternate: true
+x: 20
+y: -8
+top: false
+rotate: true
+reload: 15
+recoil: 1
+layerOffset: -1
+shootSound: missileSmall
+ejectEffect: none
+    "bullet": { 
+      maxRange: 400
+    "colors":["00eeff", "00eeff", "FFFFFFF"],
+      "type": "LaserBulletType",
+        "spawnUnit": "arcanthium-missile"
+    }
+}
+ ]
+abilities: [
+  {
+              type: MoveEffectAbility
+              y: -12
+              interval: 6
+              effect: [
+              {
+              type: ParticleEffect
+              particles: 1
+              lifetime: 50
+              length: 25
+              sizeFrom: 8
+              sizeTo: 0
+              colorFrom: ffffff
+              colorTo: ffffff
+              strokeFrom: 1
+              strokeTo: 1
+              interp: pow3Out
+              spin: 3
+              sizeInterp: pow2In
+              region: moon-mod-excision-logo2
+              }
+              ]
+              }
+              ]
+loopSound: vault

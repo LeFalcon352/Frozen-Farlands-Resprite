@@ -1,0 +1,60 @@
+	"outlineColor": "36363c",
+  "type": "mech",
+	"speed": 0.5,
+	"hitSize": 11,
+	"health": 1020,
+	"faceTarget": true,
+	"armor": 3,
+	"range": 180,
+	"rotateSpeed": 2,
+"mechFrontSway": 0.3,
+"mechSideSway": 0.3,
+"mechStepParticles": true,
+"mechStepShake": 0.3,
+	"hovering": false,
+	"immunities": [
+		"freezing"
+	],
+targetAir: true
+weapons: [
+{
+name: cryomech2-gun
+x: 9
+y: 0
+mirror: true
+shoot: {
+type: ShootPattern
+shots: 4
+shotDelay: 4
+}
+top: false
+rotate: false
+reload: 60
+recoil: 2
+shootSound: bang
+ejectEffect: none
+bullet: {
+    type: BasicBulletType,
+    speed: 4
+    lifetime: 50
+    damage: 9
+    inaccuracy: 10,
+    width: 7
+    height: 7
+    frontColor: b2afb3
+    backColor: d5d2d6
+    shootEffect: "shootSmall"
+    smokeEffect: "shootSmallSmoke"
+    ammoMultiplier: 5
+    collidesTiles: true
+    explodeRange: 1
+    splashDamageRadius: 1
+    splashDamage: 30
+    hitEffect: pointHit
+}
+}
+]
+research: {
+    parent: "cryomech"
+}
+researchCostMultiplier: 0

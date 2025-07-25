@@ -1,0 +1,79 @@
+    "type": "flying",
+    "lowAltitude": true,
+    "speed": 1.8,
+    "accel": 0.06,
+    "drag": 0.02,
+    "flying": true,
+    "health": 1000,
+    "hitSize": 18,
+    "armor": 3,
+    "itemCapacity": 0,
+  "outlineColor": "36363c",
+    "engineOffset": 10,
+    "engineSize": 5,
+    "faceTarget": true,
+weapons: [
+{
+name: cryoflare2-gun
+mirror: false
+x: 0
+y: 6
+top: false
+rotate: false
+reload: 100
+recoil: 3
+shootSound: UnitLaserGun
+ejectEffect: none
+    "bullet": { 
+    "colors":["00eeff", "00eeff", "FFFFFFF"],
+      "type": "LaserBulletType",
+      "length": 170,
+      "width": 25,
+      "damage": 50,
+      "recoil": 3.25,
+    "shootEffect": {
+        "type": "MultiEffect",
+        "effects": [
+            {
+                "type": "WaveEffect",
+                "colorFrom": "11dcf2",
+                "colorTo": "11dcf2",
+                "sizeFrom": 1,
+                "sizeTo": 20,
+                "lifetime": 10
+            }
+            {
+              type: ParticleEffect
+              particles: 5
+              lifetime: 30
+              length: 10
+              sizeFrom: 3
+              sizeTo: 0
+              colorFrom: ffffff
+              colorTo: adfaff
+              strokeFrom: 3
+              strokeTo: 1.5
+              interp: pow3Out
+              spin: 5
+              sizeInterp: pow2In
+              region: moon-mod-triangle
+            }
+        ]
+    }
+}
+}
+ ] 
+research: {
+    parent: "cryoflare2",
+    objectives: [
+        {
+            type: "SectorComplete",
+            preset: "Secret-passage"
+        }
+    ]
+	requirements: [
+		yttrium/1200
+		aerogel/800
+		moonstone/500
+	]
+}

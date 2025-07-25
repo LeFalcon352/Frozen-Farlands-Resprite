@@ -1,0 +1,128 @@
+    "type": "flying",
+    "lowAltitude": true,
+    "speed": 1.8,
+    "accel": 0.1,
+    "drag": 0.07,
+    "flying": true,
+    "health": 1400,
+    "hitSize": 12,
+    "armor": 2,
+    rotateSpeed: 2
+    "itemCapacity": 40,
+  "outlineColor": "b2b8c2",
+    "engineOffset": 9,
+    "faceTarget": true,
+    buildSpeed: 0.5
+    buildRange: 150
+    mineTier: 4
+    mineSpeed: 2
+    mineRange: 60
+mineItems: [
+  yttrium
+  arcanite
+  moonstone
+]
+weapons: [
+{
+name: axoflare3-weapon
+x: 5
+y: 1
+mirror: true
+shoot: {
+type: ShootPattern
+shots: 1
+}
+top: false
+rotate: false
+baseRotation: -35
+shootCone: 360
+reload: 30
+recoil: 1
+shootSound: MoonRaySound
+ejectEffect: none
+bullet: {
+    type: BasicBulletType
+    speed: 4
+    lifetime: 42
+    damage: 40
+    width: 10
+    height: 10
+    spin: 3
+    inaccuracy: 3
+    healAmount: 40
+    homingPower: 0.12
+    homingDelay: 5
+    collidesTeam: true
+    collides: true
+    keepVelocity: false
+    backColor: 64f450
+    frontColor: 2ddb4e  
+    smokeEffect: "shootSmallSmoke"
+    ammoMultiplier: 1
+    despawnEffect: {
+    type: WaveEffect
+    lifetime: 10
+    sizeFrom: 0
+    sizeTo: 10
+    strokeFrom: 6
+    strokeTo: 0
+    colorFrom: 64f450
+    colorTo: 2ddb4e
+  }
+    "shootEffect": {
+        "type": "MultiEffect",
+        "effects": [
+            {
+                "type": "WaveEffect",
+                "colorFrom": "64f450",
+                "colorTo": "2ddb4e",
+                "sizeFrom": 1,
+                "sizeTo": 6,
+                "lifetime": 10
+                strokeFrom: 5
+                strokeTo: 0
+            }
+        ]
+    }
+    backSprite: moon-mod-star
+    sprite: moon-mod-star2
+    shrinkX: 0
+    shrinkY: 0
+    trailChance: 1
+    trailEffect: {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    lifetime: 12
+    sizeFrom: 4
+    sizeTo: 0
+    colorFrom: 64f450
+    colorTo: 2ddb4e
+    region: particle
+  }
+}
+}
+ ] 
+research: {
+    parent: "axoflare2",
+    objectives: [
+        {
+            type: "SectorComplete",
+            preset: "Secret-passage"
+        }
+    ]
+	requirements: [
+		yttrium/1200
+		aluminium/800
+        aerogel/500
+		moonstone/500
+	]
+}
+abilities: [
+  {
+    type: RepairFieldAbility
+    amount: 20
+    range: 50
+    reload: 90
+    }
+    ]

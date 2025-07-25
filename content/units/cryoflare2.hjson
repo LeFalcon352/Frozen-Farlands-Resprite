@@ -1,0 +1,56 @@
+    "type": "flying",
+    "lowAltitude": true,
+    "speed": 2.4,
+    "accel": 0.08,
+    "drag": 0.02,
+    "flying": true,
+    "health": 300,
+    "hitSize": 14,
+    "armor": 2,
+    "itemCapacity": 0,
+  "outlineColor": "36363c",
+    "engineOffset": 8,
+    "faceTarget": true,
+weapons: [
+{
+name: cryoflare3-gun
+x: 0
+y: 2
+mirror: false
+shoot: {
+type: ShootPattern
+shots: 1
+shotDelay: 4
+}
+top: false
+rotate: false
+reload: 20
+recoil: 1
+
+shootSound: bang
+ejectEffect: none
+bullet: {
+width: 10
+height: 14
+damage: 10
+splashDamage: 25
+splashDamageRadius: 25
+speed: 4
+lifetime: 35
+backColor: 51e1e8
+frontColor: cdf8fa
+status: freezing
+statusDuration: 180
+}
+}
+ ] 
+research: {
+    parent: "cryoflare",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Lonely-lake"
+        }
+    ]
+}
+  researchCostMultiplier: 0

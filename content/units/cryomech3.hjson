@@ -1,0 +1,62 @@
+	"outlineColor": "36363c",
+  "type": "mech",
+	"speed": 0.35,
+	"hitSize": 14,
+	"health": 3260,
+	"faceTarget": true,
+	"armor": 6,
+	"range": 140,
+	"rotateSpeed": 2.5,
+"mechFrontSway": 0.3,
+"mechSideSway": 0.3,
+"mechStepParticles": true,
+"mechStepShake": 0.5,
+	"hovering": false,
+	"immunities": [
+		"freezing"
+	],
+targetAir: true
+weapons: [
+{
+name: cryomech3-gun
+x: 12
+y: 0
+mirror: true
+shoot: {
+type: ShootPattern
+shots: 3
+shotDelay: 12
+}
+top: false
+rotate: false
+reload: 90
+recoil: 2
+shootSound: bang
+ejectEffect: none
+bullet: {
+width: 13
+height: 19
+damage: 40
+speed: 7
+lifetime: 40
+frontColor: b2afb3
+backColor: d5d2d6
+status: freezing
+statusDuration: 180
+}
+}
+]
+research: {
+    parent: "cryomech2",
+    objectives: [
+        {
+            type: "SectorComplete",
+            preset: "Secret-passage"
+        }
+    ]
+	requirements: [
+		yttrium/1800
+		aluminium/800
+		moonstone/500
+	]
+}

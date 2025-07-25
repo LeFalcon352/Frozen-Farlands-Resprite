@@ -1,0 +1,137 @@
+"outlineColor": "36363c",
+  "type": "mech",
+	"speed": 0.3,
+	"hitSize": 24,
+	"health": 20360,
+	"faceTarget": true,
+	"armor": 14,
+	"range": 280,
+	"targetAir": false,
+	"rotateSpeed": 1,
+"mechFrontSway": 0.5,
+"mechSideSway": 0.5,
+"mechStepParticles": true,
+"stepShake": 3,
+mechStride: 14
+	"hovering": false,
+	"immunities": [
+		"freezing"
+	],
+targetAir: false
+weapons: [
+{
+name: cryomech5-gun
+x: 20
+y: 0
+mirror: true
+shoot: {
+type: ShootPattern
+shots: 1
+shotDelay: 3
+}
+top: false
+rotate: false
+reload: 130
+recoil: 4
+shootSound: mediumCannon
+ejectEffect: none
+shake: 4
+cooldownTime: 100
+bullet: {
+type: ArtilleryBulletType
+width: 20
+height: 25
+damage: 150
+splashDamage: 150
+splashDamageRadius: 60
+speed: 3
+lifetime: 90
+frontColor: ff9959
+backColor: eb742a
+status: paralyzed
+statusDuration: 70
+hitShake: 8
+hitSound: largeCannon
+      "lightning": 4,
+      "lightningLength": 10,
+      "lightningLengthRand": 15,
+      "lightningDamage": 100,
+      "lightningColor": "ff9959",
+shootEffect:   	{
+	"type": "ParticleEffect",
+    "particles": 10,
+    "length": 15,
+    "lifetime": 20,
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "colorFrom": "ffb78a",
+    "colorTo": "c26b34",
+    "sizeFrom": 3,
+    "sizeTo": 0
+    offsetY: 6
+	},
+   "hitEffect": {
+    "type": "multiEffect",
+    "effects": [
+    {
+    "type": "WaveEffect",
+    "lifetime": 35,
+    "sizeFrom": 0,
+    "sizeTo": 65,
+    "interp": "circleOut",
+    "strokeFrom": 35,
+    "strokeTo": 0,
+    "colorFrom": "ff9959",
+    "colorTo": "f77c2f"
+    },
+    	{
+	"type": "ParticleEffect",
+    "line": true,
+    "particles": 18,
+    "lifetime": 30,
+    "baseLength": 15,
+    "length": 60,
+    "lenFrom": 8,
+    "lenTo": 3,
+    strokeFrom: 5
+    strokeTo: 0
+    "lightColor": "ff9959",
+    "colorFrom": "ffb78a",
+    "colorTo": "f77c2f"
+	},
+  	{
+	"type": "ParticleEffect",
+    "particles": 14,
+    "length": 80,
+    "lifetime": 70,
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "colorFrom": "ffb78a",
+    "colorTo": "f77c2f",
+    "sizeFrom": 8,
+    "sizeTo": 0
+	},
+    ]
+   }
+    trailChance: 0.5
+    trailLength: 7
+    trailWidth: 5
+}
+}
+]
+research: {
+    parent: "cryomech4",
+    objectives: [
+        {
+            type: "SectorComplete",
+            preset: "Frontline"
+        }
+    ]
+	requirements: [
+		yttrium/4800
+		aluminium/3600
+		moonstone/2200
+        diamond/1800
+        arcanthium/1500
+	]
+}
